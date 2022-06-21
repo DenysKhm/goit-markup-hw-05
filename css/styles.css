@@ -50,7 +50,8 @@ img {
     align-items: center;
 }
 .header-section {
-    border-bottom: 1px solid #ECECEC
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
 }
 .logo {
     color: var(--accent-text-color);
@@ -92,6 +93,30 @@ img {
 .nav-site-link:hover,
 .nav-site-link:focus {
     color: var(--accent-text-color);
+}
+
+.nav-site-studio::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    align-items: flex-end;
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-text-color);
+}
+
+.nav-site-portfolio::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    align-items: flex-end;
+    bottom: -1px;
+    width: 78px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-text-color);
 }
 .nav-site .current {
     color: var(--accent-text-color);
