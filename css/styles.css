@@ -498,7 +498,6 @@ img {
 .soc-links-footer:hover,
 .soc-links-footer:focus {
     background-color: var(--accent-text-color);
-    fill: #FFFFFF;
     outline: none;
 }
 
